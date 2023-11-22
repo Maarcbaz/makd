@@ -1,0 +1,142 @@
+/* custom stylres */
+nav,
+header,
+body {
+    display: block;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #151716;
+}
+
+section {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #151716;
+    color: #fff;
+}
+
+.container {
+    max-width: 1160px;
+    margin: auto;
+}
+
+button {
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 163%;
+}
+
+
+
+/* Nav styles */
+nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #151716;
+    color: #fff;
+    border-bottom: 1px solid #bbc8d4;
+
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav_button_div {
+    display: flex;
+    gap: 24px;
+}
+
+.strokeButton {
+    background-color: #151716;
+    border-radius: 4px;
+    border: 2px solid #16e59a;
+    color: #16e59a;
+    font-weight: 600;
+}
+
+.strokeButton:hover {
+    background-color: #065739;
+}
+
+.fillButton {
+    background-color: #16e59a;
+    border-radius: 4px;
+    border: 2px solid #16e59a;
+    color: #151716;
+    font-weight: 600;
+}
+
+.fillButton:hover {
+    background-color: #10af75;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #11EF9F;
+}
+
+.dropdownIcon {
+    display: none;
+}
+
+.dropdownIcon a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownIcon a:hover {
+    color: #11EF9F;
+}
+
+/* sectio styles */
+header {
+    text-align: center;
+    min-width: 500Px;
+    max-width: 700px;
+    margin: auto;
+}
+
+h1.headerPara {
+
+    align-self: center;
+}
+
+/* mobile */
+
+@media screen and (max-width: 680px) {
+    nav .container div:not(:nth-child(1)) {
+        display: none;
+    }
+
+    .dropdownIcon {
+        display: block !important;
+    }
+}
